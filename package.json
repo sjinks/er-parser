@@ -1,0 +1,28 @@
+{
+  "name": "er-parser",
+  "version": "1.0.0",
+  "description": "A parser for https://er.ru",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "tsimp src/index.mts",
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Volodymyr Kolesnikov <volodymyr@wildwolf.name> (https://wildwolf.name)",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.0",
+    "@types/node": "^22.15.23",
+    "tsimp": "^2.0.12",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@fast-csv/format": "^5.0.2",
+    "cheerio": "^1.0.0"
+  }
+}

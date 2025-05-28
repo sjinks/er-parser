@@ -1,0 +1,5 @@
+/.tsimp
+/.vscode
+/dist
+/node_modules
+*.csv
