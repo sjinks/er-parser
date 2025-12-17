@@ -17,7 +17,7 @@
   "private": true,
   "devDependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.0",
-    "@types/node": "^24.0.0",
+    "@types/node": "^25.0.0",
     "tsimp": "^2.0.12",
     "typescript": "^5.5.4"
   },
