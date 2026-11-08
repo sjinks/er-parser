@@ -4,7 +4,7 @@
   "description": "A parser for https://er.ru",
   "main": "./dist/index.js",
   "scripts": {
-    "start": "tsimp src/index.mts",
+    "start": "tsx src/index.mts",
     "build": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -18,7 +18,7 @@
   "devDependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^4.0.0",
     "@types/node": "^26.0.0",
-    "tsimp": "^2.0.12",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.0"
   },
   "dependencies": {
