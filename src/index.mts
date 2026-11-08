@@ -98,9 +98,10 @@ async function parsePerson(url: URL): Promise<Person> {
     bio = bio
         .replace(/[\s--\n]+/gv, ' ')
         .replace(/\n+/gu, '\n')
-        // eslint-disable-next-line sonarjs/slow-regex -- false positive
-        .replace(/(?:^\s+)|(?:\s+$)/gmu, '')
-        .trim();
+        .split('\n')
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .join('\n');
 
     return {
         id: '',
